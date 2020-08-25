@@ -14,12 +14,12 @@ function GradeDropDown({ dropDownValues, handleDropDownSelection }) {
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
-          {dropDownValues.map((integer) => {
+          {dropDownValues.map((value) => {
             return (
               <Dropdown.Item
                 as="button"
-                key={integer}
-                value={integer}
+                key={value}
+                value={value}
                 onClick={(e) => handleDropDownSelection(e)}
               >
                 {integer}
